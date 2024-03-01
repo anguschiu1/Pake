@@ -261,3 +261,13 @@ function getFilenameFromUrl(url) {
   const urlPath = new URL(url).pathname;
   return urlPath.substring(urlPath.lastIndexOf('/') + 1);
 }
+
+// Insert YouTube ad-removal script
+setInterval(() => {
+  if (document.getElementsByClassName('ytp-ad-text').length > 0) {
+    const video = document.getElementsByClassName('video-stream html5-main-video')[0];
+    video.play();
+    video.pause();
+    video.currentTime = video.duration;
+  }
+}, 500);
