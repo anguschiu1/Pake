@@ -18,8 +18,8 @@
       "active": false
     },
     "systemTray": {
-      "iconPath": "png/youtube_512.png",
-      "iconAsTemplate": true
+      "iconPath": "png/icon_512.png",
+      "iconAsTemplate": false
     },
     "allowlist": {
       "all": true,
